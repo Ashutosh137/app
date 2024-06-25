@@ -147,8 +147,8 @@ function App() {
   }, [option]);
 
   return (
-    <div className="bg-lime-50 text-black p-3">
-      <main className=" bg-slate-50 my-2 rounded-md px-5 py-3 mx-4">
+    <div className="bg-lime-50 text-black p-1 sm:p-3">
+      <main className=" bg-slate-50 my-2 rounded-md px-5 py-3 sm:mx-4 mx-1">
         <header className="flex flex-col sm:flex-row mb-10  justify-around ">
           <div className="flex mr-auto py-3 space-x-2">
             <img
@@ -164,7 +164,7 @@ function App() {
             </div>
           </div>
           <div className="flex align-middle">
-            <p className="text-lime-700 mx-4 py-2 my-auto">
+            <p className="text-lime-700 sm:mx-4 mx-1 py-2 my-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
               ipsa?
             </p>
@@ -175,7 +175,7 @@ function App() {
             </i>
           </div>
         </header>
-        <div className="rounded-lg bg-lime-100 my-2 mx-4 p-4 px-5 ">
+        <div className="rounded-lg bg-lime-100 my-2 sm:mx-4 mx-1 p-4 px-5 ">
           <div className="p-3 grid sm:grid-cols-2 grid-cols-1   rounded-md capitalize ">
             <ul className=" w-full gap-1 flex">
               <h6 className="w-full font-bold capitalize  ">rS</h6>
@@ -238,7 +238,7 @@ function App() {
           </div>
         </div>
 
-        <div className="rounded-lg bg-lime-100 mx-4  p-4 px-5 ">
+        <div className="rounded-lg bg-lime-100 sm:mx-4 mx-1  p-4 px-5 ">
           <h6 className="font-bold capitalize mb-2 ">advice</h6>
           <p className="bg-white text-slate-800 rounded-md p-3 ">
             Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -252,7 +252,7 @@ function App() {
         </div>
       </main>
 
-      <div className="my-5 mx-4 ">
+      <div className="my-5 sm:mx-4 mx-1 ">
         <div className="flex my-5 justify-center capitalize space-x-5">
           <h1 className="text-2xl  font-bold">health grocery list</h1>
           <select
@@ -261,7 +261,7 @@ function App() {
             onChange={(e) => {
               setOption(e.target.value);
             }}
-            className=" p-1 border capitalize border-black rounded-md"
+            className="text-white p-1 border capitalize border-black rounded-md"
           >
             <option value="daily">daily</option>
             <option value="weekly">weekly</option>
@@ -307,7 +307,7 @@ function App() {
         </div>
       </div>
 
-      <div className="m-3 mx-4">
+      <div className="m-3 sm:mx-4 mx-1">
         <h3 className="text-xl font-bold capitalize my-1">instruction</h3>
         <div className="bg-white p-4 py-5 rounded-md capitalize ">
           <h6 className="text-base font-[600] ">
@@ -345,7 +345,7 @@ function App() {
           </ol>
         </div>
       </div>
-      <div className="m-3 mx-4">
+      <div className="m-3 sm:mx-4 mx-1">
         <h3 className="text-xl font-bold capitalize my-1">importtant note:</h3>
         <div className="bg-white p-4 py-5 rounded-md capitalize space-y-2">
           <p className="">
